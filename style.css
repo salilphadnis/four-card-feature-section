@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  background-color: #fafafa;
+  font-family: Poppins;
+  color: hsl(234, 12%, 34%);
+  font-size: 15px;
+}
+
+ /*Top heading and paragraph */
+ .intro {
+  max-width: 20em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.intro span {
+  font-weight: 600;  
+}
+
+/* intro paragraph */
+.intro p {
+  margin-bottom: 4em;
+  margin-top: 1.5em;
+}
+
+
+/* All card realted styles */
+.card-container {
+  display: grid;
+  row-gap: 2em;
+  grid-template-columns: 1fr;
+  max-width: 22em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+  
+}
+
+/* style for each card*/
+.card {
+  display: grid;
+  padding: 2em;
+  width: 100%;
+  border-radius: 0.3em;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+/*top borders for the cards*/
+.supervisor {
+  border-top: 0.3em solid hsl(180, 62%, 55%);
+}
+
+.team-builder {
+  border-top: 0.3em solid hsl(0, 78%, 62%);
+}
+
+.karma {
+  border-top: 0.3em solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+  border-top: 0.3em solid hsl(212, 86%, 64%);
+}
+
+/* image in the cards*/
+img {
+  max-width: 18%;
+  margin-left: auto;
+  padding-top: 3em;
+}
+
+.card p {
+  margin-top: 0.5em;
+  line-height: 1.5em;
+}
+
+/*Every p is the same */
+p {
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+
+/*h2 in the cards */
+h2 {
+  font-weight: 600;
+}
+
+
+@media (min-width: 768px) {
+  
+  .intro {
+    max-width: 35em;
+  }
+
+.intro h1 {
+  font-size: 35px;
+  font-weight: 200;
+}
+
+  .card-container {
+    max-width: 83em;
+    column-gap: 2em;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .supervisor {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+  }
+    
+  .team-builder {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .karma {
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+  }
+
+  .calculator {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+  }
+
+}
